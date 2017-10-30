@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">WareHousing</string>
+    <string name="permission_denied">Permission denied</string>
+    <string name="error_field_required">This field is required</string>
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+</resources>

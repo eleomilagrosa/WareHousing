@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+    <LinearLayout
+        android:layout_below="@+id/app_bar"
+        android:id="@+id/rl_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentStart="true">
+        <RelativeLayout
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#3d3285">
+            <TextView
+                android:layout_alignParentStart="true"
+                android:textSize="@dimen/fs_xsmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="09-16-2017"
+                android:textColor="@color/windowBackgroundColor"/>
+            <TextView
+                android:id="@+id/tv_receiving_no"
+                android:layout_alignParentEnd="true"
+                android:textSize="@dimen/fs_xsmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20123413214123"
+                android:textColor="@color/windowBackgroundColor"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl_branch"
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dashboard_buttons">
+            <ImageView
+                android:layout_marginStart="8dp"
+                android:id="@+id/iv_profile"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                app:srcCompat="@drawable/ic_add_profile"/>
+            <TextView
+                android:paddingStart="8dp"
+                android:layout_toEndOf="@+id/iv_profile"
+                android:id="@+id/tv_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select Principal"
+                android:textColor="@color/black_55"
+                android:textSize="@dimen/fs_xsmall"/>
+            <TextView
+                android:id="@+id/tv_branch"
+                android:paddingStart="8dp"
+                android:layout_toEndOf="@+id/iv_profile"
+                android:layout_below="@+id/tv_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Indian Palace"
+                android:textColor="@color/black_85"
+                android:textSize="@dimen/fs_small"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@+id/rl_header"
+        android:id="@+id/rv_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</RelativeLayout>

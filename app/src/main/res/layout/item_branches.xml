@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/rl_height"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:id="@+id/ll_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:includeFontPadding="false"
+                android:text="Branch Name : "
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/fs_xsmall"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_branch_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:includeFontPadding="false"
+                android:text="Dela Cruz, Juan"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/fs_xsmall" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:id="@+id/ll_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_2"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:includeFontPadding="false"
+                android:text="Branch Prefix : "
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/fs_xsmall"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_branch_prefix"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:includeFontPadding="false"
+                android:text="09123412"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/fs_xsmall" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:id="@+id/ll_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_3"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:includeFontPadding="false"
+                android:text="Phone #: "
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/fs_xsmall"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_mobile_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:includeFontPadding="false"
+                android:text="model"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/fs_xsmall" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:id="@+id/ll_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_4"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:includeFontPadding="false"
+                android:text="Address : "
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/fs_xsmall"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:includeFontPadding="false"
+                android:text="N/A"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/fs_xsmall" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_marginTop="4dp"
+            android:layout_below="@+id/ll_5"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/black_85"/>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_marginTop="4dp"
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:includeFontPadding="false"
+        android:text="Upload Images"
+        android:gravity="center"
+        android:textColor="#71a4fd"
+        android:textSize="@dimen/fs_medium"
+        android:textStyle="bold" />
+    <com.fusiotec.warehousing.warehousing.customviews.TouchImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/iv_menu_image"
+        android:adjustViewBounds="true"
+        />
+</RelativeLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/rl_height"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:paddingTop="8dp">
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:text="Jan 15, 2017 10:03:12"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/fs_xsmall"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_below="@+id/tv_date"
+            android:id="@+id/tv_branch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="12dp"
+            android:includeFontPadding="false"
+            android:text="Indian Palace"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/fs_small"
+            />
+
+        <TextView
+            android:id="@+id/tv_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:text="12"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/fs_small"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="8dp"
+            />
+
+        <View
+            android:layout_marginTop="8dp"
+            android:layout_below="@+id/tv_branch"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/black_85"/>
+    </RelativeLayout>
+</RelativeLayout>

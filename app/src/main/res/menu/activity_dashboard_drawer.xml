@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Job Order">
+        <menu>
+            <item
+                android:id="@+id/new_job_orders"
+                android:icon="@drawable/ic_new_job_order"
+                android:title="Receiving Stocked Items" />
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/setups"
+        android:title="Set-ups">
+        <menu>
+            <item
+                android:id="@+id/accounts"
+                android:icon="@drawable/ic_accounts"
+                android:title="Accounts" />
+            <item
+                android:id="@+id/approved_accounts"
+                android:icon="@drawable/ic_need_approval"
+                android:title="Need Approval" />
+            <item
+                android:id="@+id/admins"
+                android:icon="@drawable/ic_admins"
+                android:title="Admins" />
+            <item
+                android:id="@+id/branches"
+                android:icon="@drawable/ic_branches"
+                android:title="Branches" />
+        </menu>
+    </item>
+    <item android:title="Profile">
+        <menu>
+            <item
+                android:id="@+id/profile"
+                android:icon="@drawable/ic_profile"
+                android:title="Update Profile" />
+            <item
+                android:id="@+id/settings"
+                android:icon="@drawable/ic_settings"
+                android:title="Change Password" />
+        </menu>
+    </item>
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/log_out"
+                android:icon="@drawable/ic_logout"
+                android:title="Log-Out" />
+        </menu>
+    </item>
+
+</menu>
